@@ -1,0 +1,29 @@
+.about-bg-2{
+    background-image: url("../images/about-bg-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 80%;
+    height: 700px;
+}
+
+.about-row-2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.left-content-2{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.right-content-2{
+    width: 50%;
+    img{
+        // position: absolute;
+        // top: -50%;        
+        width: 150%;
+        transform: translateX(-150px);
+    }
+}

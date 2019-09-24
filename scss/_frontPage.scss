@@ -1,0 +1,58 @@
+.front-page{
+    background-image: url("../images/main-image.svg");
+    background-repeat: no-repeat;
+    background-position: right; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .background-image{
+        img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;    
+            width: 990px;
+        }
+    }
+
+    .front-text{
+        
+        h4{
+            font-size: 1.3rem;
+            line-height: 35px;
+            font-weight: 300;
+            margin: 40px 0;
+        }
+    }
+
+    .front-buttons{
+        margin-top: 100px;
+    }
+
+    span{
+        margin: 0 15px;
+    }
+
+}
+
+
+.bg-button{
+    background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
+    padding: 15px 50px;
+    border-radius:45px; 
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+.line-button{
+    border: 1px solid #31A95D;
+    padding: 15px 50px;
+    border-radius:45px; 
+    background: none;
+    // color: #31A95D;
+    font-weight: 400;
+    display: inline-block;
+}

@@ -1,0 +1,39 @@
+.about-bg{
+    background-image: url("../images/about-pc-bg.svg");
+    background-repeat: no-repeat;
+    background-position-x: -50px; 
+}
+
+
+.about-row{
+    // background-image: url("../images/about-pc-bg.svg");
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.left-content{
+    width: 50%;
+    // transform: translateY(-50px);
+    img{
+        width: 100%;
+        // position: absolute;
+        // top: 0;
+    }
+}
+
+.right-content{
+    width: 50%;
+    // padding-top: 60px;    
+    padding-left: 50px;
+    
+}
+
+.about-separation{
+    background: #31A95D;
+    width: 328px;
+    height: 4px;
+    margin: 20px 0;
+
+}

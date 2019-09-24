@@ -1,0 +1,289 @@
+a {
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  margin: 0; }
+
+.section-space {
+  margin-top: 60px;
+  margin-bottom: 200px;
+  position: relative; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px; }
+
+.section-title-v2 {
+  margin-bottom: 40px; }
+
+.header {
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  padding: 15px 0; }
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu-burger {
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px 0 rgba(49, 169, 93, 0.2); }
+
+.front-page {
+  background-image: url("../images/main-image.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .front-page .background-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 990px; }
+  .front-page .front-text h4 {
+    font-size: 1.3rem;
+    line-height: 35px;
+    font-weight: 300;
+    margin: 40px 0; }
+  .front-page .front-buttons {
+    margin-top: 100px; }
+  .front-page span {
+    margin: 0 15px; }
+
+.bg-button {
+  background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
+  padding: 15px 50px;
+  border-radius: 45px;
+  color: white;
+  font-weight: 400;
+  display: inline-block; }
+
+.line-button {
+  border: 1px solid #31A95D;
+  padding: 15px 50px;
+  border-radius: 45px;
+  background: none;
+  font-weight: 400;
+  display: inline-block; }
+
+.how-cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative; }
+
+.how-card-1, .how-card-2, .how-card-3 {
+  margin-right: 25px;
+  text-align: center;
+  padding: 40px 25px;
+  position: relative; }
+  .how-card-1:nth-child(2), .how-card-2:nth-child(2), .how-card-3:nth-child(2) {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 0 30px 0 rgba(49, 169, 93, 0.17); }
+  .how-card-1:last-child, .how-card-2:last-child, .how-card-3:last-child {
+    margin: 0; }
+  .how-card-1 img.card-icon, .how-card-2 img.card-icon, .how-card-3 img.card-icon {
+    height: 140px; }
+  .how-card-1 h5, .how-card-2 h5, .how-card-3 h5 {
+    margin: 40px 0 45px 0; }
+  .how-card-1 .circle-into, .how-card-2 .circle-into, .how-card-3 .circle-into {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 110px; }
+  .how-card-1 .circles-top-right, .how-card-2 .circles-top-right, .how-card-3 .circles-top-right {
+    position: absolute;
+    top: -40px;
+    right: -23%;
+    z-index: -1;
+    width: 125px; }
+  .how-card-1 .circles-bottom-left, .how-card-2 .circles-bottom-left, .how-card-3 .circles-bottom-left {
+    position: absolute;
+    bottom: -70px;
+    left: -10%;
+    z-index: -1;
+    width: 125px; }
+
+.form-emission {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 0 30px 0 rgba(49, 169, 93, 0.17);
+  width: 80%;
+  margin: auto;
+  padding: 80px 80px;
+  position: relative; }
+  .form-emission form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .form-emission .web-address, .form-emission .page-views {
+    display: block;
+    margin-bottom: 40px; }
+    .form-emission .web-address > input, .form-emission .page-views > input {
+      height: 40px;
+      width: 100%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      outline: none; }
+  .form-emission .submit-btn {
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+    .form-emission .submit-btn > input {
+      border: none; }
+  .form-emission p {
+    width: 75%;
+    margin: auto; }
+  .form-emission .emission-circles {
+    position: absolute;
+    width: 25%;
+    top: -200px;
+    right: -150px; }
+  .form-emission .flower-right-bottom {
+    position: absolute;
+    width: 20%;
+    right: -130px;
+    bottom: 0;
+    z-index: -1; }
+  .form-emission .flower-left-top {
+    position: absolute;
+    height: 65%;
+    top: -170px;
+    left: -20%;
+    z-index: -1; }
+  .form-emission .flower-left-bottom {
+    position: absolute;
+    height: 60%;
+    bottom: -20px;
+    left: -20%;
+    z-index: -1; }
+
+.about-bg {
+  background-image: url("../images/about-pc-bg.svg");
+  background-repeat: no-repeat;
+  background-position-x: -50px; }
+
+.about-row {
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.left-content {
+  width: 50%; }
+  .left-content img {
+    width: 100%; }
+
+.right-content {
+  width: 50%;
+  padding-left: 50px; }
+
+.about-separation {
+  background: #31A95D;
+  width: 328px;
+  height: 4px;
+  margin: 20px 0; }
+
+.about-bg-2 {
+  background-image: url("../images/about-bg-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 80%;
+  height: 700px; }
+
+.about-row-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%; }
+
+.left-content-2 {
+  width: 50%;
+  padding-right: 50px; }
+
+.right-content-2 {
+  width: 50%; }
+  .right-content-2 img {
+    width: 150%;
+    transform: translateX(-150px); }
+
+.contact-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 0 30px 0 rgba(49, 169, 93, 0.17);
+  padding: 50px 80px;
+  width: 80%;
+  margin: auto; }
+
+.contact-title {
+  margin-bottom: 60px; }
+
+.email-phone-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .email-phone-row input[name=your-email] {
+    width: 50%;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    outline: none; }
+  .email-phone-row input[name=phone-number] {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    outline: none; }
+
+.name-last-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .name-last-row input[name=first-name] {
+    width: 50%;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    outline: none; }
+  .name-last-row input[name=last-name] {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    outline: none; }
+
+.message-field {
+  width: 100%; }
+  .message-field textarea {
+    width: 100%;
+    height: 180px;
+    resize: none !important;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    outline: none; }
+
+.submit-form-btn {
+  margin-top: 40px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

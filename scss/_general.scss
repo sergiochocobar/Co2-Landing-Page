@@ -1,0 +1,53 @@
+// @media screen and (min-width: 1600px){
+//     .container{
+//         margin-right: auto;
+//         margin-left: auto;
+//         max-width: 1600px; /* or 950px */
+//       }    
+// }
+
+a{
+    color: inherit;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+.section-space{
+    margin-top: 60px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title-v2{
+    margin-bottom: 40px;    
+}
+
+// h1{
+//     font-size: 54px;
+// }
+
+// h2{
+//     font-size: 45px;
+// }
+
+// h4{
+//     font-size: 22px;
+// }
+
+// p{
+//     font-size: 18px;
+// }
