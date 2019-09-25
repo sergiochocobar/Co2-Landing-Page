@@ -1,0 +1,36 @@
+.footer-space{
+    margin: 50px 0;
+}
+
+.footer-separator{
+    width: 100%;
+    height: 8px;
+    background-color: #31A95D;
+    margin-bottom: 20px;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .footer-logo{
+        width: 180px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .footer-nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                margin-right: 25px;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

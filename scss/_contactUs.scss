@@ -5,19 +5,20 @@
     padding: 50px 80px;
     width: 80%;
     margin: auto;
+    position: relative;
 }
 
 .contact-title{
     margin-bottom: 60px;
 }
 
-.contact-content{
-    // background-color: antiquewhite;
-}
+// .contact-content{
+//     background-color: antiquewhite;
+// }
 
-.contact-form{
-    // background: aquamarine;
-}
+// .contact-form{
+//     background: aquamarine;
+// }
 
 .email-phone-row{
     display: flex;
@@ -84,4 +85,20 @@
 .submit-form-btn{
     margin-top: 40px;
     text-align: center;
+}
+
+
+.contact-group-circles{
+    position: absolute;
+    bottom: 0;
+    left: -35%;
+    width: 40%;
+}
+
+
+.contact-elipse{
+    background-image: url("../images/contact/contact-elipse.svg") ;
+    background-repeat: no-repeat;
+    background-position-x: 80%; 
+    background-position-y: center; 
 }
