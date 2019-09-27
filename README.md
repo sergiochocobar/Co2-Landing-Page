@@ -1,5 +1,5 @@
 # Co2 Landing Page
-Maquetación Landing Page Co2 (en progreso)
+Desarrollo Front-end Landing Page Co2 (en progreso)
 - HTML
 - SASS
 
