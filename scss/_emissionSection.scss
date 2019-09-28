@@ -6,6 +6,8 @@
     margin: auto;
     padding: 80px 80px;
     position: relative;
+    
+    transition: all 0.5s;
 
   
     form{
@@ -13,6 +15,8 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+
+        transition: all 0.5s;
     }
 
     .web-address, .page-views{
@@ -25,6 +29,7 @@
             border: none;
             border-bottom: 1px solid black;
             outline: none;
+            transition: all 0.5s;
             
         }
     }
@@ -32,11 +37,10 @@
     .submit-btn{
         margin: auto;
         margin-top: 35px;
-        margin-bottom: 35px;
-
+        margin-bottom: 35px;        
         & > input{
             border: none;
-
+            outline: none;
         }
     }
 
@@ -75,34 +79,33 @@
         bottom: -20px;
         left: -20%;
         z-index: -1;
-    }
-    
-      // .flower-right-bottom{
-    //     position: absolute;
-    //     height: 70%;
-    //     bottom: 0;
-    //     left: 85%;
-    //     z-index: -1;
-    // }
-
-    
+    }    
 }
 
-// .input-animation{
-//     &:focus{
-//         border-bottom: 1px solid #60B959 !important;
-//         animation: inputAnimation 0.5s;
-//     }
+.error-text{
+    // display: none;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: red;
+    transition: all 0.5s;
+    p{
+        margin-bottom: 15px; 
+    }
+}
+
+
+// .animacionSubmit{
+//     box-shadow: inset 0px 0px 0px 3px #019961;
 // }
 
-
-// @keyframes inputAnimation{
-
+// @keyframes animacionSubmit{
 //     from{
-//         width: 0%;
+//         opacity: 0;
 //     }
 
 //     to{
-//         width: 100%; 
+//         opacity: 1;
 //     }
 // }
+
