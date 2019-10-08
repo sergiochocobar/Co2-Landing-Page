@@ -1,41 +1,40 @@
 .front-page{
-    background-image: url("../images/main-image.svg");
+    background-image: url("../images/main-image-opacity.svg");  
     background-repeat: no-repeat;
-    background-position: right; 
-    height: 100vh;
+    background-position-x: center;            
+    background-size: cover;                 
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .background-image{
-        img{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;    
-            width: 990px;
-        }
-    }
+
 
     .front-text{
+        h1{
+            text-align: center;
+            font-size: 36px;            
+        }
         
         h4{
-            font-size: 1.3rem;
-            line-height: 35px;
-            font-weight: 300;
-            margin: 40px 0;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 20px 0;
         }
     }
 
     .front-buttons{
-        margin-top: 100px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     span{
-        margin: 0 15px;
+        margin: 15px 0;
     }
 
 }
-
 
 .bg-button{
     background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
@@ -55,7 +54,73 @@
     padding: 15px 50px;
     border-radius:45px; 
     background: none;
-    // color: #31A95D;
     font-weight: 400;
     display: inline-block;
 }
+
+@media screen and (min-width: 768px){
+    .front-page{
+        background-image: url("../images/main-image.svg");  
+        background-repeat: no-repeat;
+        background-position-x: 300px;            
+        background-size: cover;                 
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .front-text{
+            h1{
+                text-align: left ;
+                font-size: 45px;     
+            }
+
+            h4{
+                font-size: 20px;
+                line-height: 35px;
+                font-weight: 300;
+                margin: 40px 0;
+                text-align: left;
+            }
+        }
+        .front-buttons{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        span{
+            margin: 0 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){    
+    .front-page{
+        background-position-x: 400px; 
+        background-size: auto;    
+        .front-text{
+            h1{
+                font-size: 50px;     
+            }
+            h4{
+                font-size: 22px;
+            }
+        }    
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .front-page{
+        background-position-x: right;  
+        .front-text{
+            h1{
+                font-size: 54px;     
+            }
+            h4{
+                font-size: 1.3rem;
+            }
+        }    
+    }
+}
+
+
+/*VER EL TEMA DE LOS BOTONES EN MOBILE, PORQUE SON SE TAMAÑOS DISNTINTOS*/

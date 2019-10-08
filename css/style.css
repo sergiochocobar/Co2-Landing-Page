@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ol, ul, dl {
   margin: 0; }
 
@@ -10,7 +11,7 @@ a {
 body {
   font-family: 'Montserrat', sans-serif; }
 
-p {
+h1, h2, h3, h4, h5, p {
   margin: 0; }
 
 .section-space {
@@ -36,8 +37,29 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 1px solid green;
   -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  box-shadow: 0 0 0px 1000px #fff inset; }
 
+@media screen and (min-width: 992px) {
+  .header {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    padding: 15px 0; }
+
+  .header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+
+  .menu-burger {
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px 0 rgba(49, 169, 93, 0.2); } }
+/*-----------Mobile Display-----------*/
 .header {
   width: 100%;
   z-index: 999;
@@ -49,6 +71,10 @@ select:-webkit-autofill:focus {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
+  .header-row .logo {
+    width: 165px; }
+    .header-row .logo img {
+      width: 100%; }
 
 .menu-burger {
   background: white;
@@ -58,28 +84,29 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 40px 0 rgba(49, 169, 93, 0.2); }
 
 .front-page {
-  background-image: url("../images/main-image.svg");
+  background-image: url("../images/main-image-opacity.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
+  background-position-x: center;
+  background-size: cover;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .front-page .background-image img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 990px; }
+  .front-page .front-text h1 {
+    text-align: center;
+    font-size: 36px; }
   .front-page .front-text h4 {
-    font-size: 1.3rem;
-    line-height: 35px;
-    font-weight: 300;
-    margin: 40px 0; }
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0; }
   .front-page .front-buttons {
-    margin-top: 100px; }
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .front-page span {
-    margin: 0 15px; }
+    margin: 15px 0; }
 
 .bg-button {
   background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
@@ -99,6 +126,47 @@ select:-webkit-autofill:focus {
   font-weight: 400;
   display: inline-block; }
 
+@media screen and (min-width: 768px) {
+  .front-page {
+    background-image: url("../images/main-image.svg");
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .front-page .front-text h1 {
+      text-align: left;
+      font-size: 45px; }
+    .front-page .front-text h4 {
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: 300;
+      margin: 40px 0;
+      text-align: left; }
+    .front-page .front-buttons {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row; }
+    .front-page span {
+      margin: 0 15px; } }
+@media screen and (min-width: 992px) {
+  .front-page {
+    background-position-x: 400px;
+    background-size: auto; }
+    .front-page .front-text h1 {
+      font-size: 50px; }
+    .front-page .front-text h4 {
+      font-size: 22px; } }
+@media screen and (min-width: 1200px) {
+  .front-page {
+    background-position-x: right; }
+    .front-page .front-text h1 {
+      font-size: 54px; }
+    .front-page .front-text h4 {
+      font-size: 1.3rem; } }
+/*VER EL TEMA DE LOS BOTONES EN MOBILE, PORQUE SON SE TAMA├æOS DISNTINTOS*/
 .how-cards-row {
   display: flex;
   flex-direction: row;
