@@ -2,16 +2,14 @@
     background: white;
     border-radius: 18px;
     box-shadow: 0 0 30px 0 rgba(49, 169, 93, 0.17);
-    width: 80%;
     margin: auto;
-    padding: 80px 80px;
+    padding: 50px 0;
     position: relative;
-    
     transition: all 0.5s;
 
   
     form{
-        width: 70%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -30,82 +28,132 @@
             border-bottom: 1px solid black;
             outline: none;
             transition: all 0.5s;
+            border-radius: 0;
+            
             
         }
     }
     
     .submit-btn{
         margin: auto;
-        margin-top: 35px;
         margin-bottom: 35px;        
         & > input{
             border: none;
             outline: none;
+            padding: 15px 0; /*------------------------------------------------ ARREGLAR EL TEMA DE LOS BOTONES PARA TODOS*/
         }
     }
 
     p{
-        width: 75%;
+        font-size: 14px;
+        width: 80%; 
         margin: auto;
     }
     
     .emission-circles{
-        position: absolute;
-        width: 25%;
-        top: -200px;
-        right: -150px;
-
+        display: none;
     }
 
     .flower-right-bottom{
-        position: absolute;
-        width: 20%;
-        right: -130px;
-        bottom: 0;
-        z-index: -1;
+        display: none;
     }
 
     .flower-left-top{
-        position: absolute;
-        height: 65%;
-        top: -170px;
-        left: -20%;
-        z-index: -1;
+        display: none;
     }
     
     .flower-left-bottom{
-        position: absolute;
-        height: 60%;
-        bottom: -20px;
-        left: -20%;
-        z-index: -1;
+        display: none;
     }    
 }
 
-.error-text{
-    // display: none;
-    opacity: 1;
-    visibility: visible;
-    text-align: center;
-    color: red;
-    transition: all 0.5s;
-    p{
-        margin-bottom: 15px; 
+
+@media screen and (min-width: 768px){
+    .form-emission{
+        
+        .emission-circles{
+            display: inline-block;
+            position: absolute;
+            width: 25%;
+            top: -150px;
+            right: -120px;
+        }
+        .flower-right-bottom{
+            display: inline-block;
+            position: absolute;
+            width: 20%;
+            right: -100px;
+            bottom: 0;
+            z-index: -1;
+        }
+    
+        .flower-left-top{
+            display: inline-block;
+            position: absolute;
+            height: 65%;
+            top: -170px;
+            left: -20%;
+            z-index: -1;
+        }
+        
+        .flower-left-bottom{
+            display: inline-block;
+            position: absolute;
+            height: 60%;
+            bottom: -20px;
+            left: -20%;
+            z-index: -1;
+        }   
     }
 }
 
 
-// .animacionSubmit{
-//     box-shadow: inset 0px 0px 0px 3px #019961;
-// }
+@media screen and (min-width: 992px){
+    .form-emission{
+        width: 80%;
+        padding: 80px;
+        form{
+            width: 70%;
+        }
+        p{
+            width: 75%;
+        }
+    }
+}
 
-// @keyframes animacionSubmit{
-//     from{
-//         opacity: 0;
-//     }
+@media screen and (min-width: 1200px){
+    .form-emission{
+        .emission-circles{
+            top: -200px;
+            right: -150px;
 
-//     to{
-//         opacity: 1;
+        }
+
+        .flower-right-bottom{
+            right: -130px;
+            bottom: 0;
+        }
+
+        .flower-left-top{
+            top: -170px;
+            left: -20%;
+        }
+        
+        .flower-left-bottom{
+            bottom: -20px;
+            left: -20%;
+        }  
+    }
+}
+
+// .error-text{
+//     opacity: 1;
+//     visibility: visible;
+//     text-align: center;
+//     color: red;
+//     transition: all 0.5s;
+//     p{
+//         margin-bottom: 15px; 
 //     }
 // }
 

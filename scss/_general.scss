@@ -5,6 +5,12 @@
 //         max-width: 1600px; /* or 950px */
 //       }    
 // }
+
+html, body{
+    overflow-x: hidden;
+}
+
+
 ol, ul, dl{
     margin: 0;
 }
