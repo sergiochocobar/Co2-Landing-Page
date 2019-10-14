@@ -43,6 +43,8 @@
     color: white;
     font-weight: 400;
     display: inline-block;
+    width: 200px;
+    text-align: center;
     &:hover{
         color: white !important;
     }
@@ -56,6 +58,8 @@
     background: none;
     font-weight: 400;
     display: inline-block;
+    width: 200px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px){
