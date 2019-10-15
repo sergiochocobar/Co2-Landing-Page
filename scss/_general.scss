@@ -1,15 +1,10 @@
-// @media screen and (min-width: 1600px){
-//     .container{
-//         margin-right: auto;
-//         margin-left: auto;
-//         max-width: 1600px; /* or 950px */
-//       }    
-// }
-
 html, body{
     overflow-x: hidden;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 ol, ul, dl{
     margin: 0;
@@ -22,45 +17,10 @@ a{
         color: inherit
     }
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-}
 
-h1,h2,h3,h4,h5,p{
+h1, h2, h3, h4, h5, p{
     margin: 0;
 }
-
-.section-space{
-    margin-top: 60px;
-    margin-bottom: 200px;
-    position: relative;
-}
-
-.section-title{
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.section-title-v2{
-    margin-bottom: 40px;    
-}
-
-// h1{
-//     font-size: 54px;
-// }
-
-// h2{
-//     font-size: 45px;
-// }
-
-// h4{
-//     font-size: 22px;
-// }
-
-// p{
-//     font-size: 18px;
-// }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -75,5 +35,80 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: black;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   box-shadow: 0 0 0px 1000px #fff inset;
-//   transition: background-color 5000s ease-in-out 0s;
+}
+
+/*--- Estilos de los espacios de cada Seccion ---*/
+.section-space{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title-v2{
+    margin-bottom: 40px;    
+}
+
+/*------------- Estilos de los Botones -------------*/
+.bg-button{
+    background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
+    padding: 15px 0;
+    border-radius:45px; 
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    &:hover{
+        color: white !important;
+    }
+}
+
+.line-button{
+    border: 1px solid #31A95D;
+    padding: 15px 0;
+    border-radius:45px; 
+    background: none;
+    font-weight: 400;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .section-space{
+        margin-top: 60px;
+        margin-bottom: 200px;
+        position: relative;
+    }
+    
+    .section-title{
+        margin-bottom: 80px;
+    }
+
+    .section-title-v2{
+        display: flex;
+        align-items: center;
+        &::before{
+            content: '';
+            display: inline-block;
+            background-color: #B4D653 ;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    p{
+        line-height: 35px !important;
+    }
 }

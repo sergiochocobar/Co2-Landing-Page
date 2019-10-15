@@ -1,24 +1,19 @@
+
 .contact-card{
     background: white;
     border-radius: 18px;
     box-shadow: 0 0 30px 0 rgba(49, 169, 93, 0.17);
-    padding: 50px 80px;
-    width: 80%;
+    padding: 50px 20px;                                                
+    width: 100%;                                                       
     margin: auto;
     position: relative;
 }
 
+
 .contact-title{
-    margin-bottom: 60px;
+    margin-bottom: 40px;                                                
 }
 
-// .contact-content{
-//     background-color: antiquewhite;
-// }
-
-// .contact-form{
-//     background: aquamarine;
-// }
 
 .email-phone-row{
     display: flex;
@@ -27,13 +22,13 @@
     
     input[name=your-email]{
         width: 50%;
-        margin-right: 30px; 
+        margin-right: 15px;                                                   
         border: none;
         border-bottom: 1px solid black;
         background: none;
         outline: none;
-        
         transition: all 0.5s;
+        border-radius: 0;
     }
     
 
@@ -43,8 +38,10 @@
         border-bottom: 1px solid black;
         background: none;
         outline: none;
+        border-radius: 0;
     }
-}
+}   
+
 
 .name-last-row{
     display: flex;
@@ -53,13 +50,13 @@
 
     input[name=first-name]{
         width: 50%;
-        margin-right: 30px; 
+        margin-right: 15px;                                                       
         border: none;
         border-bottom: 1px solid black;
         background: none;
         outline: none;
-
-        transition: all 0.5s
+        border-radius: 0;
+        transition: all 0.5s;
     }
     
 
@@ -69,7 +66,7 @@
         border-bottom: 1px solid black;
         background: none;
         outline: none;
-
+        border-radius: 0;
         transition: all 0.5s;
     }
 }
@@ -85,7 +82,7 @@
         border-bottom: 1px solid black;
         background: none;
         outline: none;
-
+        border-radius: 0;
         transition: all 0.5s;
     }
 }
@@ -93,46 +90,83 @@
 .submit-form-btn{
     margin-top: 40px;
     text-align: center;
-
     input{
         outline: none;
     }
 }
 
-
 .contact-group-circles{
-    position: absolute;
-    bottom: 0;
-    left: -35%;
-    width: 40%;
-}
+    display: none;
+ }
 
+ .contact-elipse{
+    display: none;
+ }
 
-.contact-elipse{
-    background-image: url("../images/contact/contact-elipse.svg") ;
-    background-repeat: no-repeat;
-    background-position-x: 80%; 
-    background-position-y: center; 
-}
-
-// .contact-error{
-//     // display: none;
-//     opacity: 0;
-//     visibility: hidden;
-//     text-align: center;
-//     color: red;
-//     transition: all 0.5s;
-//     p{
-//         margin-bottom: 15px; 
-//     }
-// }
-
-
-.error-visible{
+ #contactError{
     opacity: 1;
     visibility: visible;
     text-align: center;
     color: red;
-    font-size: 14px; 
-    margin: 15px;
+    transition: all 0.5s;
+    p{
+        margin: 10px 0; 
+        font-size: 14px; 
+        line-height: inherit !important;
+    }
+
+ }
+
+@media screen and (min-width: 768px){
+    .contact-card{
+        padding: 50px 80px;                                              
+        // width: 100%;             
+    }
+
+    .contact-title{
+        margin-bottom: 60px;
+    }
+
+
+    .email-phone-row{
+        input[name=your-email]{
+            margin-right: 30px;                                                      
+        }
+    }
+
+    .name-last-row{
+        input[name=first-name]{
+            margin-right: 30px;  
+        }   
+    }
+
+    .contact-group-circles{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -18%;
+        width: 20%;                                                                          
+    }
+
+    .contact-elipse{
+        display: block;
+        position: absolute;
+        top: 15%;
+        right: -15%;
+        width: 20%;
+        z-index: -1;
+    }
 }
+
+@media screen and (min-width: 992px){
+    .contact-card{                                           
+        width: 80%;             
+    }
+
+    .contact-group-circles{
+        left: -35%;
+        width: 40%;
+    }
+}
+
+

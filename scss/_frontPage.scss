@@ -36,32 +36,6 @@
 
 }
 
-.bg-button{
-    background: linear-gradient(90deg, #B5D653 0%, #019961 100%);
-    padding: 15px 50px;
-    border-radius:45px; 
-    color: white;
-    font-weight: 400;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    &:hover{
-        color: white !important;
-    }
-}
-
-
-.line-button{
-    border: 1px solid #31A95D;
-    padding: 15px 50px;
-    border-radius:45px; 
-    background: none;
-    font-weight: 400;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-}
-
 @media screen and (min-width: 768px){
     .front-page{
         background-image: url("../images/main-image.svg");  

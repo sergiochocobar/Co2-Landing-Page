@@ -4,7 +4,7 @@
 
 .footer-separator{
     width: 100%;
-    height: 8px;
+    height: 4px;
     background-color: #31A95D;
     margin-bottom: 20px;
 }
@@ -14,8 +14,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     .footer-logo{
-        width: 180px;
+        width: 140px;
         img{
             width: 100%;
         }
@@ -24,13 +25,43 @@
     .footer-nav{
         ul{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            text-align: right;
             li{
-                margin-right: 25px;
+                margin-bottom: 10px;
                 &:last-child{
-                    margin: 0;
+                    margin-bottom: 0;
+                }
+            }            
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-separator{
+        height: 8px;
+    }
+    .footer-row{
+        .footer-nav{
+            ul{
+                flex-direction: row;
+                text-align: left;
+                li{
+                    margin-bottom: 0;
+                    margin-right: 25px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .footer-row{
+        .footer-logo{
+            width: 180px;
         }
     }
 }

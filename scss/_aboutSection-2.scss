@@ -1,29 +1,39 @@
 .about-bg-2{
-    background-image: url("../images/about-bg-2.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 80%;
-    height: 700px;
+    display: none;
 }
 
-.about-row-2{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 100%;
+@media screen and (min-width: 768px){
+    .about-bg-2{
+        display: block;
+        background-image: url("../images/about-bg-2.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 95%;                                          /*AL PONER EN PORCENTAJE SE FIJA A LA DERECHA?*/
+    }
+    
+    .about-row-2{
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+    
+    .left-content-2{
+        width: 50%;
+    }
 }
 
-.left-content-2{
-    width: 50%;
-    padding-right: 50px;
+@media screen and (min-width: 992px){
+    .about-bg-2{
+        background-position-x: 90%;                /*AL PONER EN PORCENTAJE SE FIJA A LA DERECHA?*/
+        height: 500px;
+    }
 }
 
-.right-content-2{
-    width: 50%;
-    img{
-        // position: absolute;
-        // top: -50%;        
-        width: 150%;
-        transform: translateX(-150px);
+
+@media screen and (min-width: 1200px){
+    .about-bg-2{
+        background-position-x: 85%;
+        height: 700px;  
     }
 }
